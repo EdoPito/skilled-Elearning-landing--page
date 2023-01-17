@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.page{
+    max-width: 95%;
+    margin: 10px auto;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+/* nav */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+
+}
+
+picture img{
+
+    max-width: 100%;
+}
+
+picture{
+    width: 25%;
+}
+
+nav button{
+
+    padding: 10px 24px;
+    border-radius: 28px;
+    border-style: none;
+    background: #13183F;
+    color: #ffffffff;
+}
+
+nav button:hover{
+    cursor: pointer;
+    background: #666CA3;
+}
+
+/* main */
+
+.hero h1{
+
+font-size: 39px;
+line-height: 46px;
+color: #13183F;
+font-weight: 800;
+margin-bottom: 26px;
+
+}
+
+.hero p{
+
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color: #83869A;
+margin-bottom: 24px;
+}
+
+.hero button{
+
+ background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+ border-radius: 31.5px;
+ padding: 11px 38px;
+ color: white;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 26px;
+ border-style: none;
+ margin-bottom: 46px;
+}
+
+.hero button:hover{
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    
+}
+
+/* separator */
+
+
+.separator img{
+    width: 100%;
+}
+
+/* grid part */
+
+.grid{
+
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.card1{
+
+font-weight: 800;
+font-size: 16px;
+line-height: 32px;
+color: #FFFFFF;
+background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+border-radius: 10px;
+padding: 24px 29px;
+margin-bottom: 50px;
+
+}
+
+.card{
+
+margin-top: 16px;
+box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+border-radius: 10px;
+margin-bottom: 40px;
+}
+
+.card-content{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.card-content picture img{
+    transform: translateY(-45%);
+}
+
+.card h2{
+
+margin-top: 16px;
+margin-bottom: 16px;
+font-weight: 800;
+font-size: 20px;
+line-height: 25px;
+color: #13183F;
+
+}
+
+
+.card p{
+    
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color: #83869A;
+margin-bottom: 24px;
+}
+
+.card button{
+
+border-style: none;
+background-color: white;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+color: #F74780;
+text-decoration: underline;
+margin-bottom: 32px;
+cursor: pointer;
+
+}
+
+.card button:hover{
+
+    color: #FFA7C3;
+    transition: color 0.5s ease-out ;
+}
+
+/* footer */
+
+footer{
+    background: #13183F;
+    padding: 45px 0px;
+}
+
+.footer-box{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.footer-box button{
+
+background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+border-radius: 28px;
+padding: 10px 24px;
+color: #FFFFFF;
+
+
+}
+
+
+/* media for tablet */
+
+@media (min-width:768px){
+
+.hero{
+    max-width: 58%;
+    margin-bottom: 180px;
+    margin-top: 100px;
+}
+
+body{
+        
+    background-image: url('assets/image-hero-tablet.png');
+    background-repeat: no-repeat;
+    background-position: top -100px right -300px;
+        
+} 
+
+
+
+.separator{
+    display: none;
+}
+
+.grid{
+
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+.card1 h2{
+    transform: translateY(50px)
+    
+}
+
+.card{
+    margin-top: 0;
+}
+
+
+
+
+
+
+}
+
+/* media for desktop */
+
+@media (min-width:1440px){
+
+    .page{
+        width: 80%;
+    }
+
+    nav{
+        
+        margin: 0 auto;
+    }
+
+    .hero{
+        max-width: 30%;
+        margin-bottom: 226px;
+    }
+
+    body{
+        
+        background-position: top -100px right -150px;
+        
+        
+       
+    }
+
+
+    .grid{
+
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:10px;
+    }
+
+    .card-content{
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    
+    
+
+}
